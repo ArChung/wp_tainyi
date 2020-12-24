@@ -21,8 +21,6 @@ class Ajax_ extends AJAX
         // add_action('wp_ajax_afterAdd2cart',  array(__CLASS__, 'afterAdd2cart'));
         // add_action('wp_ajax_nopriv_afterAdd2cart', array(__CLASS__, 'afterAdd2cart'));
     }
-
-
     public static function sender()
     {
 
@@ -40,9 +38,6 @@ class Ajax_ extends AJAX
         $message .= (isset($_POST['jobTitle'])) ? '職稱:' . "\n" . $_POST['jobTitle'] . "\n\n" : '';
         $message .= (isset($_POST['email'])) ? '信箱:' . "\n" . $_POST['email'] . "\n\n" : '';
         $message .= (isset($_POST['detail'])) ? '專業類型與需求:' . "\n" . $_POST['detail'] . "\n\n" : '';
-
-
-
         $msg = wp_mail($to, $subject, $message, $headers);
 
         if (!empty($msg)) {
@@ -69,6 +64,4 @@ class Ajax_ extends AJAX
     }
 }
 Ajax_::init();
-// Routes::map('/api/sender', 'Ajax::sender');
-
 Routes::map('/api/sender2', __NAMESPACE__ . '\\Ajax_::sender');
