@@ -21,7 +21,7 @@
 
 							{% if item.get_children %}
 								<li class="item hasChild md:py-3">
-									<a class="link flex items-center cursor-pointer h-full">
+									<a class="link flex items-center cursor-pointer h-full px-4" target="{{item.target}}" href="{{ item.link}}">
 										{{ item.title }}
 									</a>
 									{# Second level menu #}
@@ -65,7 +65,7 @@
 			<a href="/contact" class=" flex items-center justify-center p-3 hover-bg hover-up">
 				<img src="{{'images/d/mail_icon 1.png'|assets}}" alt="">
 			</a>
-			<div class=" md:flex items-center justify-center p-3  hidden">
+			<div class=" lg:flex items-center justify-center p-3  hidden">
 				<a class="gee link" data-gene="click:drawer.toggle" data-ta="{{toggle is defined ? toggle :'.app-bar .menu'}}">
 					<svg class='w-8 fill-current text-black' viewbox="0 0 20 20">
 						<path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>

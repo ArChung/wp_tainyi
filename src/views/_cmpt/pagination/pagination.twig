@@ -1,7 +1,7 @@
 {# PAGINATION LIST #}
 
 <ul class="pagination flex items-center space-x-5 justify-center">
-	{% if row.prev is defined %}
+	{% if row.prev  %}
 		<li class="page-item">
 			<a class="page-link block" href="{{row.prev.link}}">
 				<img src="{{'images/arrLeft.png'|assets}}" alt="">
@@ -31,7 +31,7 @@
 
 
 	{# NEXT BUTTON #}
-	{% if row.next is defined %}
+	{% if row.next  %}
 		<li class="page-item">
 			<a class="page-link block" href="{{row.next.link}}">
 				<img src="{{'images/arrRight.png'|assets}}" alt="">

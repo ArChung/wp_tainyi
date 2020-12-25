@@ -89,7 +89,7 @@ html
 		padding-top: 50px!important
 		padding-bottom: 50px!important
 
-.t-btn
+=t-btn
 	border: 1px solid #000
 	padding: 5px 30px
 	display: inline-block
@@ -98,6 +98,15 @@ html
 		background-color: var(--color-primary)
 		border: 1px solid var(--color-primary)
 		color: white
+.t-btn
+	+t-btn
+
+.t-btnSet
+	.submenu 
+		.cat-item 
+			+t-btn 
+			&:not(:first-child)
+				margin-left: 15px
 
 
 
@@ -128,14 +137,24 @@ html
 				display: flex
 				align-items: center
 				justify-content: space-between
+				+phone 
+					flex-direction: column
 				.subTitle
 					@apply px-4 mx-4 text-2xl w-1/5 font-bold
+					+phone 
+						width: 100%
+						text-align: center
+						@apply py-2 mx-0 px-0
 				.innerContent
 					@apply w-3/5
+					+phone 
+						width: 100%
 				ul 
 					column-count: 2
 					column-gap: 4rem	
 					padding-left: 1em
+					+phone 
+						column-count: 1
 						
 
 		&:first-child
@@ -256,7 +275,7 @@ ul.dotList
 
 .hasChild
 	position: relative
-	display: none
+	// display: none
 	.dropdown 
 		display: none
 		background-color: #fff
@@ -296,3 +315,10 @@ ul.dotList
 	&:hover
 		@apply shadow-xl
 		+dTime
+
+.scroll-lr-container
+	+phone
+		width: 100%
+		overflow-x: scroll
+		img 
+			min-width: 700px

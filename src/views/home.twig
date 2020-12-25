@@ -10,52 +10,55 @@
 {% endblock %}
 {% block bodier %}
 	{{post.content}}
-	<div class="bg-repeat my-16 md:my-4" style='height:1px;background-image:url({{"images/line.png"|assets}})'></div>
-	<div class="s-title py-8  text-center mt-14 ani-f-b">
-		<h1>來自客戶真實回饋</h1>
-		<img src="http://tainyi.domoidea.com/app/uploads/tainyi/feedback_dtxt.png" alt="" class="d-txt onCenter">
-	</div>
+	<div class="container pb-14 overflow-hidden">
+		<div class="bg-repeat my-16 md:my-4" style='height:1px;background-image:url({{"images/line.png"|assets}})'></div>
+		<div class="s-title py-8  text-center mt-14 ani-f-b">
+			<h1>{{"來自客戶真實回饋"|t}}</h1>
+			<img src="http://tainyi.domoidea.com/app/uploads/tainyi/feedback_dtxt.png" alt="" class="d-txt onCenter">
+		</div>
 
-	<div class="slider gee pb-8 ani-f-b" data-gene="init:slider-2">
-		{% for item in testimonies %}
-			<div class="slide">
-				<div class="picTxtWrap flex-row-reverse items-end px-4 ">
-					<div class="pic">
-						<img src='{{item.thumbnail.src}}' alt="">
-					</div>
-					<div class="txt px-2 ">
-						<div class="content border-l-8 border-primary pl-6">
-							<div class="text-2xl">{{item.title}}</div>
-							<div class="mt-2">{{item.excerpt}}</div>
+		<div class="slider gee pb-8 ani-f-b" data-gene="init:slider-2">
+			{% for item in testimonies %}
+				<div class="slide">
+					<div class="picTxtWrap flex-row-reverse items-end px-4 ">
+						<div class="pic">
+							<img src='{{item.thumbnail.src}}' alt="">
+						</div>
+						<div class="txt px-2 ">
+							<div class="content border-l-8 border-primary pl-6">
+								<div class="text-2xl">{{item.title}}</div>
+								<div class="mt-2">{{item.excerpt}}</div>
+							</div>
 						</div>
 					</div>
 				</div>
+			{% endfor %}
+		</div>
+
+
+		{# change now #}
+		<div class="py-16 mt-16 px-8 coverBg flex justify-between flex-wrap md:justify-center ani-f-b" style="background-image:url('http://tainyi.domoidea.com/app/uploads/tainyi/index-banner.jpg')">
+
+			<div>
+				<img src='http://tainyi.domoidea.com/app/uploads/tainyi/change_now.png' alt="">
+				<div class='text-white mt-8'>{{"1個改變…或許<br>
+					可以促進16%的銷售成長<br>
+					可以讓25%的漲幅變合理<br>
+					可以降低30%的行銷預算<br>
+					更重要的是100%為地球付出行動的心"|t}}
+				</div>
 			</div>
-		{% endfor %}
-	</div>
-
-
-	{# change now #}
-	<div class="py-16 mt-16 px-8 coverBg flex justify-between flex-wrap md:justify-center ani-f-b" style="background-image:url('http://tainyi.domoidea.com/app/uploads/tainyi/index-banner.jpg')">
-
-		<div>
-			<img src='http://tainyi.domoidea.com/app/uploads/tainyi/change_now.png' alt="">
-			<div class='text-white mt-8'>1個改變…或許<br>
-				可以促進16%的銷售成長<br>
-				可以讓25%的漲幅變合理<br>
-				可以降低30%的行銷預算<br>
-				更重要的是100%為地球付出行動的心</div>
+			<div class='md:mt-8'>
+				<img src="http://tainyi.domoidea.com/app/uploads/tainyi/c2.png" alt="">
+			</div>
 		</div>
-		<div class='md:mt-8'>
-			<img src="http://tainyi.domoidea.com/app/uploads/c2.png" alt="">
+
+
+		<div class="mt-14 px-8 text-center">
+			<p>{{"請放棄傷害地球又尺寸不合的包材，讓品牌能真正被消費者袋者走!<br>
+				天毅，不只製造商品，更創造價值!"|t}}</p>
+			<a href='#' class="mt-6 t-btn">{{"了解更多"|t}}</a>
 		</div>
-	</div>
-
-
-	<div class="mt-14 px-8 text-center">
-		<p>請放棄傷害地球又尺寸不合的包材，讓品牌能真正被消費者袋者走!<br>
-			天毅，不只製造商品，更創造價值!</p>
-		<a href='#' class="mt-6 t-btn">了解更多</a>
 	</div>
 
 </div>{% endblock %}
