@@ -71,9 +71,10 @@ if (is_day()) {
 
         $sidebar_args['titles'] = __('產品分類', 'domo');
         $sidebar_args['depth'] = 2;
-
-        foreach ($term->banner as $key => $value) {
-            $context['products_banners'][] = new Timber\Image($key);
+        if ($term->banner) {
+            foreach ($term->banner as $key => $value) {
+                $context['products_banners'][] = new Timber\Image($key);
+            }
         }
     } else {
         $sidebar_args['titles'] = '';
