@@ -14,63 +14,25 @@
 
 
 	{# 天毅的客戶 #}
-	<div class="s-title py-8  text-center mt-8 mb-8 ani-f-b">
-		<h1>天毅的客戶</h1>
-		<img src="http://tainyi.domoidea.com/app/uploads/tainyi/about_t2-1.png" alt="" class="d-txt onCenter">
-	</div>
-
-
-	{% set client = {
-			items: [{
-				img: {
-					src: 'images/d/clients1.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients2.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients3.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients4.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients5.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients1.png',
-					alt: ''
-				}
-			},{
-				img: {
-					src: 'images/d/clients2.png',
-					alt: ''
-				}
-			}]
-		}%}
-
-	<section class='ani-f-b'>
-		<div class="slider gee clientSlider" data-gene="init:slider-clients">
-			{% for key, item in clients %}
-				{% set img =  Image(key) %}
-
-				<div class="relative ">
-					<img src="{{ img.src}}" alt="{{ img.alt }}">
-					<div class="roundBg  scale-150 transform"></div>
-				</div>
-			{% endfor %}
+	<div class="container overflow-hidden pb-14" >
+		<div class="bg-repeat my-16 md:my-4" style='height:1px;background-image:url({{"images/line.png"|assets}})'></div>
+		<div class="s-title py-8  text-center mt-8 mb-8 ani-f-b" id='clients'>
+			<h1>{{"天毅的客戶"|t}}</h1>
+			<img src="http://tainyi.domoidea.com/app/uploads/tainyi/about_t2-1.png" alt="" class="d-txt onCenter">
 		</div>
-	</section>
+
+		<section class='ani-f-b'>
+			<div class="slider gee clientSlider" data-gene="init:slider-clients">
+				{% for key, item in clients %}
+					{% set img =  Image(key) %}
+					<div class="relative ">
+						<img src="{{ img.src}}" alt="{{ img.alt }}">
+						<div class="roundBg  scale-150 transform"></div>
+					</div>
+				{% endfor %}
+			</div>
+		</section>
 
 
-</div></div>{% endblock %}
+	</div>
+{% endblock %}

@@ -7,7 +7,6 @@
 		{{post.content}}
 
 
-		{# 布色 #}
 		<section id="clothColor" class="">
 			<img src="{{'images/d/intoPic2.png'|assets}}" alt="" class="mx-auto w-16">
 			<div class="s-title py-4  text-center">
@@ -22,7 +21,7 @@
 						<div class="pic" style=" background-color: {{ item.color }}	">
 							<div class="cloth-img" style="background-image:url({{ item.thumbnail}})"></div>
 						</div>
-						<div class="txt mt-2 text-center">
+						<div class="txt mt-2 text-center " style="min-height:4em">
 							<div class="pantone-txt">
 								<p>Pantone</p>
 								<p>{{item.pantone}}</p>
