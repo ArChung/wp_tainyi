@@ -4,38 +4,38 @@
 {% block bodier %}
 	<div class="container py-14">
 		<div class="s-title py-4  text-center">
-			<h1>聯絡我們</h1>
+			<h1>{{"聯絡我們"|t}}</h1>
 			<img src="{{'images/d/contact-dt.png'|assets}}" alt="" class="d-txt onCenter">
 		</div>
 		<div class="bg-repeat mt-8 mb-4" style='height:1px;background-image:url({{"images/line.png"|assets}})'></div>
 		<form method="post" accept-charset="UTF-8" class="formWrap">
 			<div class="field required inputWrap">
-				<label for="username">姓名 NAME</label>
+				<label for="username">{{"姓名 NAME"|t}}</label>
 				<input id="username " required type="text" name="username">
 			</div>
 			<div class="field required inputWrap">
-				<label for="phone">電話 Phone</label>
+				<label for="phone">{{"電話 Phone"|t}}</label>
 				<input id="phone " required type="tel" name="phone">
 			</div>
 			<div class="field required inputWrap">
-				<label for="company">公司 Company</label>
+				<label for="company">{{"公司 Company"|t}}</label>
 				<input id="company " required type="text" name="company">
 			</div>
 			<div class="field required inputWrap">
-				<label for="jobTitle">職稱 Job title</label>
+				<label for="jobTitle">{{"職稱 Job title"|t}}</label>
 				<input id="jobTitle " required type="text" name="jobTitle">
 			</div>
 			<div class="field required inputWrap">
-				<label for="email">信箱 Email</label>
+				<label for="email">{{"信箱 Email"|t}}</label>
 				<input id="email " required type="email" name="email">
 			</div>
 			<div class="field required textareaWrap">
-				<label for="detail">專業類型與需求  Project request</label>
+				<label for="detail">{{"專業類型與需求  Project request"|t}}</label>
 				<textarea id="detail" name="detail" class=""></textarea>
 			</div>
 			<div class="flex justify-end w-full md:justify-center">
 				<button type="submit" class=" block gee t-btn justify-self-end mt-8" data-nopde="1" data-gene="click:contackSubmit" data-uri="/sender2">
-					送出Submit
+					{{"送出Submit"|t}}
 				</button>
 			</div>
 
