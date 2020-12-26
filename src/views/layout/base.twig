@@ -24,8 +24,15 @@
 
 			{# {% include '@core/mod/loader/loader.twig' %} #}
 			{% include '@partial/footer.twig' %}
+ 
+			{% include "@cmpt/topBtn/topBtn.twig" with {
+				img_url: "http://tainyi.domoidea.com/app/uploads/tainyi/top-btn.png"
+			} %}
 
 			{% block append %}{% endblock %}
 			{{ function('wp_footer') }}
+
+
+			
 		</body>
 	</html>

@@ -172,7 +172,7 @@ export default {
 
 		gee.hook('initAnimation',me=>{
 
-
+			console.log('initAnimation')
 			me.find('.ani-f-b').each((index,el)=>{
 				gsap.from($(el),{
 					duration: .8,
@@ -201,5 +201,8 @@ export default {
 			})
 			
 		})
+		
+
+		
 	},
 }
