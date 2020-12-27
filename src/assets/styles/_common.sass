@@ -80,6 +80,18 @@ html
 .slick-slide
 	outline: none
 
+
+	.slick-slide-container
+		overflow: hidden
+		.slick-slide-bg
+			+dTime(3s)
+			transform: scale(1.05)
+	&.slick-current
+		.slick-slide-container
+			.slick-slide-bg
+				+dTime(10s)
+				transform: scale(1)
+
 .clientSlider
 	.slick-slide 
 		margin: 0 20px
@@ -101,12 +113,7 @@ html
 .t-btn
 	+t-btn
 
-.t-btnSet
-	.submenu 
-		.cat-item 
-			+t-btn 
-			&:not(:first-child)
-				margin-left: 15px
+
 
 
 
@@ -323,10 +330,25 @@ ul.dotList
 		img 
 			min-width: 700px
 
-.side 
+.news-btnSet
+	.submenu 
+		.cat-item
+			+t-btn
+			&:not(:first-child)
+				+pc
+					margin-left: 15px
+				+phone
+					margin-top: 15px
+			+phone 
+				width: 100%		
+				text-align: center
+	
+.pro-btnSet
 	.submenu 
 		.cat-item
 			@apply mt-3
+			+phone 
+				width: 100%
 			&:hover
 				@apply text-primary
 				

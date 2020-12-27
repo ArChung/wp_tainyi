@@ -108,7 +108,7 @@ export default {
 		gee.hook('slider', me => {
 			me.slick({
 				dots: true,
-				autoplay: false,
+				autoplay: true,
 				autoplaySpeed: 4000,
 				speed: 1200,
 				arrows: false,

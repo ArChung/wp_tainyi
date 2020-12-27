@@ -8,14 +8,19 @@
 {% block bodier %}
 
 	<div class="container py-16 md:py-4">
-		<div class="flex md:flex-col">
-			<div class="side w-48 md:w-full">
+		<div class="flex md:flex-col-reverse">
+			<div class="side w-48 md:w-full pro-btnSet">	
+				<div class="submenu">
+					<div class="cat-item font-bold">
+						<a href="/product_category/product/">{{"全品項"|t}}</a>
+					</div>
+				</div>
 				{{sidebar}}
 			</div>
 			<div class="innerContainer flex-grow">
 				<div class="flex flex-wrap justify-between ani-stagger">
 					{% for item in posts %}
-						{% include "@cmpt/bag.twig" with { item: item ,cls :'w-1/3 mb-4 ani-item'} %}
+						{% include "@cmpt/bag.twig" with { item: item ,cls :'w-1/3 mb-4 ani-item md:w-1/2'} %}
 					{% endfor %}
 
 					<div class="space w-1/3"></div>
