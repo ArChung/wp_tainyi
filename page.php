@@ -31,7 +31,9 @@ if ($post->banner) {
 switch ($post->post_name) {
 
     case 'introdution':
+        // $context['cloths'] =  Models\Slip::take(20)->get();
         $context['cloths'] =  Models\Slip::all();
+        // md($context['cloths']);
         break;
     case 'contact':
 
