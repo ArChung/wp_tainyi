@@ -18,14 +18,18 @@
 						<div class="slide ratio-bag bg-contain bg-no-repeat bg-center" style="background-image:url({{img.src('thumbnail')}})"></div>
 					{% endfor %}
 				</div>
-				<div class="flex justify-between px-8 mx-auto" style="max-width:400px">
-					<div class="prevBtn cursor-pointer">
-						<img src="{{'images/arrLeft.png'|assets}}" alt="">
+
+				{% if row.gallery|length > 1 %}
+					<div class="flex justify-between px-8 mx-auto" style="max-width:400px">
+						<div class="prevBtn cursor-pointer">
+							<img src="{{'images/arrLeft.png'|assets}}" alt="">
+						</div>
+						<div class="nextBtn cursor-pointer">
+							<img src="{{'images/arrRight.png'|assets}}" alt="">
+						</div>
 					</div>
-					<div class="nextBtn cursor-pointer">
-						<img src="{{'images/arrRight.png'|assets}}" alt="">
-					</div>
-				</div>
+				{% endif %}
+
 
 			</div>
 			<div class="txtWrap w-1/2 md:w-full">
@@ -49,11 +53,11 @@
 				<a href="/contact" class="t-btn mt-6">聯絡我們</a>
 			</div>
 		</div>
+		{# <div class="bg-repeat mt-16 md:my-4" style='height:1px;background-image:url({{"images/line.png"|assets}})'></div> #}
 
-
-		<div class="flex justify-between mt-16 md:flex-wrap ani-stagger">
-			{% for item in recommends %}
-				{% include "@cmpt/bag.twig" with { item: item ,cls :'w-1/4 mb-4 md:w-1/2 ani-item'} %}
+		<div class="flex justify-center mt-16 md:flex-wrap ani-stagger">
+			{% for item in recommends|slice(0, 4) %}
+				{% include "@cmpt/bag.twig" with { item: item ,cls :'w-1/4 mb-4 md:w-1/2 ani-item px-1'} %}
 			{% endfor %}
 		</div>
 	</div>

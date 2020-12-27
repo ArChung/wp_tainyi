@@ -31,6 +31,7 @@ import '@cmpt/appbar/appbar.js'
 import '@cmpt/share/share.js'
 import '@cmpt/touch/touch.js'
 import '@cmpt/qaItem/qaItem.js'
+import '@cmpt/topBtn/topBtn.js'
 
 import custom from '@/assets/script.js'
 // import '@core/cmpt/comment/comment.js'
@@ -50,7 +51,6 @@ import Drawer from '@core/mod/drawer/drawer.js'
 // import modal from '@core/mod/modal/modal.js'
 // import accordion from '@core/mod/accordion/accordion.js'
 import dropdown from '@core/mod/dropdown/dropdown.js' 
-// import sticky from '@core/mod/sticky/sticky.js'
 // import tree from '@core/mod/tree/tree.js' 
 
 var App = new app()
