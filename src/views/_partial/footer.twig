@@ -43,13 +43,13 @@
 	<div class="container">
 		<div class="flex justify-between md:flex-col md:space-y-4 space-y-0">
 
-			<div class="">
+			<div class="pr-3">
 				<p class='font-bold'>{{site.info.company_name}}</p>
 				<p>{{site.info.address}}</p>
 			</div>
 
-			{% for item in locations %}
-				<div class="flex items-start">
+			{% for item in locations %} 
+				<div class="flex items-start flex-shrink-0 pr-3">
 					<div class="pb-1 border-b-2 border-white">{{item.title}}</div>
 					<div class="ml-4">
 						<ul class="space-y-2">

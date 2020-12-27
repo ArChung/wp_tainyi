@@ -101,12 +101,7 @@ html
 .t-btn
 	+t-btn
 
-.t-btnSet
-	.submenu 
-		.cat-item 
-			+t-btn 
-			&:not(:first-child)
-				margin-left: 15px
+
 
 
 
@@ -323,10 +318,25 @@ ul.dotList
 		img 
 			min-width: 700px
 
-.side 
+.news-btnSet
+	.submenu 
+		.cat-item
+			+t-btn
+			&:not(:first-child)
+				+pc
+					margin-left: 15px
+				+phone
+					margin-top: 15px
+			+phone 
+				width: 100%		
+				text-align: center
+	
+.pro-btnSet
 	.submenu 
 		.cat-item
 			@apply mt-3
+			+phone 
+				width: 100%
 			&:hover
 				@apply text-primary
 				
