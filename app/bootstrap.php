@@ -25,7 +25,7 @@ Models\Block::init();
 Models\Product::init();
 Models\Slip::init();
 Models\Post::init();
-// Models\Company::init();
+Models\Company::init();
 Models\Site::get_instance();
 
 // // remove_filter('the_content', 'wpautop');

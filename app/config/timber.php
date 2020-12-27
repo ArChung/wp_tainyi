@@ -48,6 +48,11 @@ function add_to_context($context)
 
 
 
+
+    $context['locations'] =  \Domo\Models\Company::all();
+    // md($context['locations']);
+
+
     $context['logo'] = Helper::images_path('logo.png');
     $context['logo_dark'] = Helper::images_path('logo-dark.png');
 

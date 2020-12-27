@@ -17,6 +17,41 @@
                 }
             }
         },
+        "domo-testimony-post": {
+            "pages": {
+                "post.php": "",
+                "post-new.php": ""
+            },
+            "post_type": "block",
+            "forms": {
+                "post": {
+                    "fields": {
+                        "_testimony_group_title": {
+                            "jquery": ".regular-text:not(.cmb2-upload-file)"
+                        },
+                        "_testimony_group_excerpt": {
+                            "jquery": ".cmb2_textarea"
+                        }
+                    }
+                }
+            }
+        },
+        "domo-company-post": {
+            "pages": {
+                "post.php": "",
+                "post-new.php": ""
+            },
+            "post_type": "company",
+            "forms": {
+                "post": {
+                    "fields": {
+                        "company_address": {
+                            "jquery": "#address"
+                        }
+                    }
+                }
+            }
+        },
         "domo-partner-post": {
             "pages": {
                 "post.php": "",

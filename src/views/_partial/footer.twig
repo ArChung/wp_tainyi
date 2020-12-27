@@ -20,7 +20,7 @@
 </div>
 
 
-{% set site = {
+{# {% set site = {
 	info:{
 		company_name: '天毅企業有限公司',
 		address: '237新北市三峽區隆恩街178-9號',
@@ -36,7 +36,7 @@
 			fex: '(+886) 2 2673-5070',
 		}]
 	}
-} %}
+} %} #}
 
 
 <div class="py-10 bg-gray text-white">
@@ -48,14 +48,24 @@
 				<p>{{site.info.address}}</p>
 			</div>
 
-			{% for item in site.info.locations %}
+			{% for item in locations %}
 				<div class="flex items-start">
 					<div class="pb-1 border-b-2 border-white">{{item.title}}</div>
 					<div class="ml-4">
 						<ul class="space-y-2">
-							<li><a class='hover:underline' href="tel:{{item.tel}}"><span class="mr-2">T:</span>{{item.tel}}</a></li>
-							<li><span class="mr-2">F:</span> {{item.fex}}</li>
-							<li><a class='hover:underline' href="mailto:{{item.email}}"><span class="mr-2">E:</span> {{item.email}}</a></li>
+							<li>
+								<a class='hover:underline' href="tel:{{item.tel}}">
+									<span class="mr-2">T:</span>
+									{{item.tel}}</a>
+							</li>
+							<li>
+								<span class="mr-2">F:</span>
+								{{item.fax}}</li>
+							<li>
+								<a class='hover:underline' href="mailto:{{item.email}}">
+									<span class="mr-2">E:</span>
+									{{item.email}}</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -63,7 +73,7 @@
 		</div>
 
 		{# <div class="py-4 text-right">
-			<a href="/privacy-policy" class=" ">Privacy Policy</a>
-		</div> #}
+																	<a href="/privacy-policy" class=" ">Privacy Policy</a>
+																</div> #}
 	</div>
 </div>

@@ -124,18 +124,18 @@ class Site
             'id' => $this->metabox_id . 'logo',
             'type' => 'file',
         ));
-        $cmb->add_field(array(
-            'name' => __('LOGO深色畫面用', 'domo'),
-            'id' => $this->metabox_id . 'logo_dark',
-            'type' => 'file',
+        // $cmb->add_field(array(
+        //     'name' => __('LOGO深色畫面用', 'domo'),
+        //     'id' => $this->metabox_id . 'logo_dark',
+        //     'type' => 'file',
 
-        ));
-        $cmb->add_field(array(
-            'name' => __('LOGO淺色畫面用', 'domo'),
-            'id' => $this->metabox_id . 'logo_light',
-            'type' => 'textarea',
-            'type' => 'file',
-        ));
+        // ));
+        // $cmb->add_field(array(
+        //     'name' => __('LOGO淺色畫面用', 'domo'),
+        //     'id' => $this->metabox_id . 'logo_light',
+        //     'type' => 'textarea',
+        //     'type' => 'file',
+        // ));
         //   $cmb->add_field(array(
         //     'name' => __('預設Banner', 'domo'),
         //     'desc' => __('Tag、作者、搜尋結果...使用', 'domo'),
@@ -158,22 +158,22 @@ class Site
             'id' => $this->metabox_id . 'tel',
             'type' => 'text',
         ));
-        $cmb->add_field(array(
-            'name' => __('Skype', 'domo'),
-            'id' => $this->metabox_id . 'skype',
-            'type' => 'text',
-        ));
+        // $cmb->add_field(array(
+        //     'name' => __('Skype', 'domo'),
+        //     'id' => $this->metabox_id . 'skype',
+        //     'type' => 'text',
+        // ));
 
         $cmb->add_field(array(
             'name' => __('Address', 'domo'),
             'id' => $this->metabox_id . 'address',
             'type' => 'text',
         ));
-        $cmb->add_field(array(
-            'name' => __('Business', 'domo'),
-            'id' => $this->metabox_id . 'business',
-            'type' => 'text',
-        ));
+        // $cmb->add_field(array(
+        //     'name' => __('Business', 'domo'),
+        //     'id' => $this->metabox_id . 'business',
+        //     'type' => 'text',
+        // ));
         $cmb->add_field(array(
             'name' => __('EMAIL', 'domo'),
             'id' => $this->metabox_id . 'email',

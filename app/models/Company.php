@@ -49,20 +49,30 @@ class Company extends PostType
             'type' => 'text',
         ));
         $mb->add_field(array(
+            'name' => __('Fax'),
+            'id' => 'fax',
+            'type' => 'text',
+        ));
+        $mb->add_field(array(
             'name' => __('Address'),
             'id' => 'address',
             'type' => 'text',
         ));
         $mb->add_field(array(
-            'name' => __('Business'),
-            'id' => 'business',
+            'name' => __('Email'),
+            'id' => 'email',
             'type' => 'text',
         ));
-        $mb->add_field(array(
-            'name' => 'Google map ',
-            'desc' => '請直接貼入google embed code',
-            'id' => 'map',
-            'type' => 'textarea_code',
-        ));
+        // $mb->add_field(array(
+        //     'name' => __('Business'),
+        //     'id' => 'business',
+        //     'type' => 'text',
+        // ));
+        // $mb->add_field(array(
+        //     'name' => 'Google map ',
+        //     'desc' => '請直接貼入google embed code',
+        //     'id' => 'map',
+        //     'type' => 'textarea_code',
+        // ));
     }
 }

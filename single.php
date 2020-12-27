@@ -11,12 +11,12 @@ $context['cancel_link'] = get_cancel_comment_reply_link(__('Cancel reply', 'base
 $next_post = get_previous_post();
 if (is_a($next_post, 'WP_Post')) {
     // $context['next'] = get_permalink($next_post->ID);
-    $context['next'] = ['link' => get_permalink($next_post->ID), 'title' => $next_post->post_title];
+    $context['next'] = ['link' => get_permalink($next_post->ID), 'title' => get_the_title($next_post->ID)];
 }
 
 $prev_post = get_next_post();
 if (is_a($prev_post, 'WP_Post')) {
-    $context['prev'] = ['link' => get_permalink($prev_post->ID), 'title' => $prev_post->post_title];
+    $context['prev'] = ['link' => get_permalink($prev_post->ID), 'title' => get_the_title($prev_post->ID)];
 }
 
 if (post_password_required($post->ID)) {
