@@ -80,6 +80,18 @@ html
 .slick-slide
 	outline: none
 
+
+	.slick-slide-container
+		overflow: hidden
+		.slick-slide-bg
+			+dTime(3s)
+			transform: scale(1.05)
+	&.slick-current
+		.slick-slide-container
+			.slick-slide-bg
+				+dTime(10s)
+				transform: scale(1)
+
 .clientSlider
 	.slick-slide 
 		margin: 0 20px

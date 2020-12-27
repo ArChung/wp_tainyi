@@ -69,7 +69,7 @@ if (is_day()) {
 
     if ($post_type === 'product') {
 
-        $sidebar_args['titles'] = __('產品分類', 'domo');
+        $sidebar_args['titles'] = __('', 'domo');
         // $sidebar_args['uncategories'] = true;
         // $sidebar_args['child_of'] = 0;
         $sidebar_args['depth'] = 2;

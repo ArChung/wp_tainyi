@@ -42,7 +42,7 @@ class Ajax_ extends AJAX
 
         if (!empty($msg)) {
             $code = 1;
-            $msg = __('成功. ', 'domo');
+            $msg = __('我們已經收到您的資訊，將於三個工作天內與您聯絡，非常感謝您的支持。Received your information, and we will contact with you within 3  working days, thank you. ', 'domo');
         } else {
             $code = 400;
             $msg =    __('The server is currently unable to send mail. ', 'domo');

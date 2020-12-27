@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbs\n"
-"POT-Creation-Date: 2020-12-26 13:57+0800\n"
-"PO-Revision-Date: 2020-12-26 20:46+0800\n"
+"POT-Creation-Date: 2020-12-27 21:30+0800\n"
+"PO-Revision-Date: 2020-12-27 21:30+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: src/views/_cmpt/card/card.twig:14 src/views/home.twig:60
+#: src/views/_cmpt/card/card.twig:14 src/views/home.twig:84
 msgid "了解更多"
 msgstr "More"
 
@@ -34,11 +34,11 @@ msgstr "All Category"
 msgid "請輸入關鍵字"
 msgstr "Keyword"
 
-#: src/views/_cmpt/loopbar/loopbar.twig:28
+#: src/views/_cmpt/loopbar/loopbar.twig:28 src/views/page/contact.twig:38
 msgid "送出"
 msgstr "Submit"
 
-#: src/views/_cmpt/touch/touch.twig:4
+#: src/views/_cmpt/touch/touch.twig:4 src/views/page/contact.twig:13
 #: static/_core/_/tainyi/src/views/_cmpt/touch/touch.twig:4
 msgid "姓名"
 msgstr "Name"
@@ -82,6 +82,10 @@ msgstr "Submit"
 msgid "常見問題"
 msgstr "F&Q"
 
+#: src/views/archive-product.twig:15
+msgid "全品項"
+msgstr "All"
+
 #: src/views/archive.twig:8
 msgid "最新消息"
 msgstr "News"
@@ -92,11 +96,8 @@ msgstr "Testimony"
 
 #: src/views/home.twig:44
 msgid ""
-"1個改變…或許<br>\n"
-"                                        可以促進16%的銷售成長<br>\n"
-"                                        可以讓25%的漲幅變合理<br>\n"
-"                                        可以降低30%的行銷預算<br>\n"
-"                                        更重要的是100%為地球付出行動的心"
+"1個改變…或許<br>可以促進16%的銷售成長<br>可以讓25%的漲幅變合理<br>可以降低"
+"30%的行銷預算<br>更重要的是100%為地球付出行動的心"
 msgstr ""
 "By doing one little change, it could…<br>\n"
 "Improve sales performance by 16%<br>\n"
@@ -104,13 +105,29 @@ msgstr ""
 "Reduce marketing budget by 30%<br>\n"
 "Most importantly, taking care our planet 100%"
 
-#: src/views/home.twig:58
+#: src/views/home.twig:53
+msgid "銷售成長"
+msgstr "Sales growth"
+
+#: src/views/home.twig:60
+msgid "價格漲幅"
+msgstr "Price increase"
+
+#: src/views/home.twig:67
+msgid "行銷預算"
+msgstr "Marketing budget"
+
+#: src/views/home.twig:74
+msgid "為地球付出"
+msgstr "For the earth"
+
+#: src/views/home.twig:83
 msgid ""
-"請放棄傷害地球又尺寸不合的包材，讓品牌能真正被消費者袋者走!<br>\n"
-"                                天毅，不只製造商品，更創造價值!"
+"請放棄傷害地球又尺寸不合的包材，讓品牌能真正被消費者袋者走!<br>天毅，不只製"
+"造商品，更創造價值!"
 msgstr ""
-"Please say no to those non-eco friendly and unfit packaging material.\n"
-"Let consumer carry your brand value around.\n"
+"Please say no to those non-eco friendly and unfit packaging material.<br>\n"
+"Let consumer carry your brand value around.<br>\n"
 "Tienyih, not only a manufacturer, but a value creator!"
 
 #: src/views/page/about.twig:19
@@ -121,39 +138,43 @@ msgstr "Our Clients"
 msgid "聯絡我們"
 msgstr "Contact us"
 
-#: src/views/page/contact.twig:13
-msgid "姓名 NAME"
-msgstr "Name"
-
 #: src/views/page/contact.twig:17
-msgid "電話 Phone"
-msgstr "Phone"
+msgid "電話"
+msgstr "Tel"
 
 #: src/views/page/contact.twig:21
-msgid "公司 Company"
+msgid "公司"
 msgstr "Company"
 
 #: src/views/page/contact.twig:25
-msgid "職稱 Job title"
-msgstr "Job Title"
+msgid "職稱"
+msgstr "Job title"
 
 #: src/views/page/contact.twig:29
-msgid "信箱 Email"
+msgid "信箱"
 msgstr "Email"
 
 #: src/views/page/contact.twig:33
-msgid "專業類型與需求  Project request"
+msgid "專業類型與需求"
 msgstr "Project request"
 
-#: src/views/page/contact.twig:38
-#, fuzzy
-#| msgid "Submit"
-msgid "送出Submit"
-msgstr "Submit"
-
-#: src/views/page/introdution.twig:13
+#: src/views/page/introdution.twig:15 src/views/page/introdution.twig:32
 msgid "布色"
-msgstr "Fabric Stock Color"
+msgstr "Fabric Color"
+
+#~ msgid "姓名 NAME"
+#~ msgstr "Name"
+
+#~ msgid "電話 Phone"
+#~ msgstr "Phone"
+
+#~ msgid "職稱 Job title"
+#~ msgstr "Job Title"
+
+#, fuzzy
+#~| msgid "Submit"
+#~ msgid "送出Submit"
+#~ msgstr "Submit"
 
 #~ msgid "作者"
 #~ msgstr "Author."
@@ -168,10 +189,9 @@ msgstr "Fabric Stock Color"
 #~ msgstr "Search"
 
 #~ msgid "歡迎訂閱電子報，請輸入您有效的E-Mail，即可不定時接收最新資訊。"
-#~ msgstr "Please subscribe to the newsletter, please enter your valid E-Mail, you can receive the latest information from time to time."
-
-#~ msgid "電話"
-#~ msgstr "Tel"
+#~ msgstr ""
+#~ "Please subscribe to the newsletter, please enter your valid E-Mail, you "
+#~ "can receive the latest information from time to time."
 
 #~ msgid "地址"
 #~ msgstr "Address"
