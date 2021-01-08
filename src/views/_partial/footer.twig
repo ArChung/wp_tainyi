@@ -39,9 +39,9 @@
 } %} #}
 
 
-<div class="py-10 bg-gray text-white">
+<div class=" bg-gray text-white">
 	<div class="container">
-		<div class="flex justify-between md:flex-col md:space-y-4 space-y-0">
+		<div class="flex justify-between md:flex-col md:space-y-4 space-y-0 py-10">
 
 			<div class="pr-3">
 				<p class='font-bold'>{{site.info.company_name}}</p>
@@ -70,6 +70,9 @@
 					</div>
 				</div>
 			{% endfor %}
+		</div>
+		<div class="flex border-t border-white py-8 justify-end">
+			<a href="/privacy-policy" class="underline text-sm">{{"隱私權政策"|t}}</a>
 		</div>
 
 		{# <div class="py-4 text-right">

@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block bodier %}
-	<div class="container">
+	<div class="container py-14">
+		<h1 class="text-3xl font-bold text-center">
+			{{post.title}}</h1>
 		<article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
 			<div class="wysiwyg md:wysiwyg py-10">
 				{{ post.content }}

@@ -12,6 +12,9 @@
                     "fields": {
                         "option_address": {
                             "jquery": "#option_address"
+                        },
+                        "option_name":{
+                            "jquery": "#option_name"
                         }
                     }
                 }
