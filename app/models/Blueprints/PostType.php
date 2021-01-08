@@ -14,7 +14,7 @@ class PostType
 
     public static function all()
     {
-        return \Timber::get_posts(['post_type' => self::post_type()]);
+        return \Timber::get_posts(['post_type' => self::post_type(), 'posts_per_page' => -1]);
     }
 
     public static function find($id)

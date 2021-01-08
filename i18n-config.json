@@ -82,22 +82,6 @@
                     }
                 }
             }
-        },
-        "domo-page-history": {
-            "pages": {
-                "post.php": "",
-                "post-new.php": ""
-            },
-            "post_type": "page",
-            "forms": {
-                "post": {
-                    "fields": {
-                        "_page_history_group_0_excerpt": {
-                            "jquery": ".cmb2_textarea"
-                        }
-                    }
-                }
-            }
         }
     }
 }
