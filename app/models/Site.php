@@ -123,6 +123,7 @@ class Site
             'name' => __('LOGO', 'domo'),
             'id' => $this->metabox_id . 'logo',
             'type' => 'file',
+            'desc' => '建議尺寸: 200 x 64 px',
         ));
         // $cmb->add_field(array(
         //     'name' => __('LOGO深色畫面用', 'domo'),

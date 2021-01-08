@@ -26,7 +26,7 @@ class Page extends PostType
         ));
         $mb->add_field(array(
             'name' => 'banner',
-            'desc' => '',
+            'desc' => '建議尺寸: 1440 x 540 px ，安全範圍: 中間 1025 x 475 px',
             'id' => 'banner',
             'type' => 'file_list',
 

@@ -40,7 +40,7 @@ class Post extends PostType
         $mb->add_field(array(
             'name' => __('Banner'),
             'id' => 'banner',
-            // 'desc'    => 'Select ingredients. Drag to reorder.',
+            'desc'    => '建議尺寸:1440 x 540 px',
             'type' => 'file',
 
         ));

@@ -83,7 +83,7 @@ class Product extends PostType
 
         $mb->add_field(array(
             'name' => 'Gallery',
-            'desc' => '',
+            'desc' => '建議尺寸: 400 x 480 px',
             'id' => 'gallery',
             'type' => 'file_list',
 
@@ -133,7 +133,7 @@ class Product extends PostType
         $cmb->add_field(array(
             'name' => 'Banner',
             'id' => 'banner',
-            'desc' => '列表頁使用的Gallery',
+            'desc' => '建議尺寸: 1440 x 337 px，安全範圍: 中間 580 x 320px',
             'type' => 'file_list',
             'preview_size' => array(300, 100), // Default: array( 50, 50 )
             'query_args' => array('type' => 'image'), // Only images attachment
