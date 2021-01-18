@@ -20,7 +20,7 @@ class Post extends PostType
         if (!empty($posts)) {
             foreach ($posts as $post) {
 
-                $options[$post->ID] = $post->post_name;
+                $options[$post->ID] = $post->title;
             };
         }
         return $options;
