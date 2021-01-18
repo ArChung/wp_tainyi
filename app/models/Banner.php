@@ -44,6 +44,7 @@ class Banner extends PostType
         $mb = new_cmb2_box(array(
             'id' => $mb_id,
             'title' => __('設定'),
+            'desc' => '尺寸建議',
             'object_types' => array('banner'),
         ));
 

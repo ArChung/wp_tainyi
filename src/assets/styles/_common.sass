@@ -202,10 +202,16 @@ html
 	.space
 		width: 150px
 		@apply mx-1 
+		+phone 	
+			width: 120px
 	.cloth-item
 		@apply mx-1 my-4
+		width: 150px
+		+phone 	
+			width: 120px
+
 		.pic	
-			width: 150px
+			width: 100%
 			+ratio(1,1)
 			position: relative
 			.cloth-img
@@ -294,6 +300,7 @@ ul.dotList
 		&.active 
 			> .dropdown 
 				display: block
+				@apply shadow-none
 
 		&.maintain .dropdown
 			position: absolute

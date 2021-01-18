@@ -13,7 +13,7 @@ export default {
 
 	init() {
 		this.hook()
-		$('.hasChild').on('click', function () {
+		$('.hasChild').on('click', function (e) {
 			$(this).toggleClass('active')
 		})
 	},

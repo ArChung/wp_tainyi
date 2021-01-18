@@ -75,6 +75,7 @@ class Block extends PostType
         $mb->add_group_field($group, array(
             'name'    => __('圖片', 'domo'),
             'id'      => 'thumbnail',
+            'desc' => '建議尺寸: 320 x 320 px',
             'type'    => 'file',
         ));
 
@@ -92,7 +93,7 @@ class Block extends PostType
 
         $mb->add_field(array(
             'name' => 'Logo',
-            'desc' => '',
+            'desc' => '建議尺寸: 150x150 , 安全範圍: 中間 120x120',
             'id' => 'logo',
             'type' => 'file_list',
         ));

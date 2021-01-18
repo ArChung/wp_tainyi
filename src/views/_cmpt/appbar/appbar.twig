@@ -3,29 +3,29 @@
 		class="flex items-center justify-between w-full">
 		{# logo #}
 		<a href="{{uri}}" title="首頁" class="pb-3">
-			<img class="" src="{{'images/d/logo.png'|assets}}" title="網站logo" alt="網站logo">
+			<img class="" src="{{ site.logo.normal }}" title="網站logo" alt="網站logo" style="max-width:101px">
 		</a>
 
 
 		<div class='flex'>
-			<div class="menu drawer  md:drawer --left md:text-2xl md:p-5 md:w-full">
+			<div class="menu drawer  md:drawer --left lg:text-2xl lg:p-5 lg:w-full">
 				<a href="javascript:;" class="close" title="關閉選單">
 					<svg viewbox="0 0 20 20" class='fill-current  w-8'>
 						<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
 					</svg>
 				</a>
 
-				<div class="flex h-full md:h-auto md:py-16">
-					<ul class="nav --normal flex md:flex-col ">
+				<div class="flex h-full lg:py-16 lg:overflow-y-scroll">
+					<ul class="nav --normal flex lg:flex-col ">
 						{% for item in header_menu %}
-
+ 
 							{% if item.get_children %}
-								<li class="item hasChild md:py-3">
-									<a class="link flex items-center cursor-pointer h-full px-4" target="{{item.target}}" href="{{ item.link}}">
+								<li class="item hasChild lg:py-3">
+									<a class="link flex items-center cursor-pointer h-full px-4 lg:h-auto lg:pointer-events-none" target="{{item.target}}" href="{{ item.link}}">
 										{{ item.title }}
 									</a>
 									{# Second level menu #}
-									<ul class="dropdown  absolute pl-0 md:pl-6 md:relative">
+									<ul class="dropdown  absolute pl-0 lg:pl-6 lg:relative">
 										{% for child in  item.get_children %}
 											<li class="item ">
 												<a class="link flex items-center hover-txt" href="{{ child.link }}">
@@ -36,8 +36,8 @@
 									</ul>
 								</li>
 							{% else %}
-								<li class="item md:py-3">
-									<a class="link flex items-center h-full px-4 hover-txt " target="{{item.target}}" href="{{ item.link}}">
+								<li class="item lg:py-3">
+									<a class="link flex items-center h-full px-4 hover-txt lg:h-auto" target="{{item.target}}" href="{{ item.link}}">
 										{{ item.title }}
 									</a>
 								</li>

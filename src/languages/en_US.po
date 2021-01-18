@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tbs\n"
-"POT-Creation-Date: 2020-12-27 21:30+0800\n"
-"PO-Revision-Date: 2020-12-27 21:30+0800\n"
+"POT-Creation-Date: 2020-12-28 11:50+0800\n"
+"PO-Revision-Date: 2020-12-28 11:50+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -78,6 +78,10 @@ msgstr "Please enter your question"
 msgid "Submit"
 msgstr "Submit"
 
+#: src/views/_partial/footer.twig:75
+msgid "隱私權政策"
+msgstr "Privacy and policy"
+
 #: src/views/archive-faq.twig:14
 msgid "常見問題"
 msgstr "F&Q"
@@ -107,11 +111,11 @@ msgstr ""
 
 #: src/views/home.twig:53
 msgid "銷售成長"
-msgstr "Sales growth"
+msgstr "Sales Go Up"
 
 #: src/views/home.twig:60
 msgid "價格漲幅"
-msgstr "Price increase"
+msgstr "Prices Go Up"
 
 #: src/views/home.twig:67
 msgid "行銷預算"
@@ -119,7 +123,7 @@ msgstr "Marketing budget"
 
 #: src/views/home.twig:74
 msgid "為地球付出"
-msgstr "For the earth"
+msgstr "Care for Earth"
 
 #: src/views/home.twig:83
 msgid ""
