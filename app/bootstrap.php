@@ -137,3 +137,12 @@ function tgm_exclude_from_new($display, $meta_box)
     return !$is_new_post;
 }
 add_filter('cmb2_show_on', 'tgm_exclude_from_new', 10, 2);
+function stackoverflow_30817906($content, $post_id, $thumbnail_id)
+{
+    if ('post' !== get_post_type($post_id)) {
+        return $content;
+    }
+    $caption = '<p>' . esc_html__('Recommended image size: 1300px (width) x 340px (height)', 'i18n-tag') . '</p>';
+    return $content . $caption;
+}
+add_filter('admin_post_thumbnail_html', 'stackoverflow_30817906', 10, 3);

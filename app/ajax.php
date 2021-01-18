@@ -27,8 +27,9 @@ class Ajax_ extends AJAX
         $to = Helper::get_option('option_email');
 
         $subject =  Helper::get_option('option_name') . ' 網頁郵件';
-        $headers[] = 'From: 聯絡郵件 <' . $to . '>';
-        $headers[] = 'Cc: admin <chieh.lee@gmail.com>';
+        $headers = [];
+        // $headers[] = 'From: 聯絡郵件 <' . $to . '>';
+        // $headers[] = 'Cc: admin <chieh.lee@gmail.com>';
 
         $message = '';
 
