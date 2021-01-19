@@ -20,25 +20,6 @@
 </div>
 
 
-{# {% set site = {
-	info:{
-		company_name: '天毅企業有限公司',
-		address: '237新北市三峽區隆恩街178-9號',
-		locations:[{
-			title: '國內部',
-			tel: '(+886) 2 2673-1883',
-			email: 'service@tienyih.com',
-			fex: '(+886) 2 2673-5070',
-		},{
-			title: '國外部',
-			tel: '(+886) 2 2672-4698 ext 16',
-			email: 'info@tienyih.com',
-			fex: '(+886) 2 2673-5070',
-		}]
-	}
-} %} #}
-
-
 <div class=" bg-gray text-white">
 	<div class="container">
 		<div class="flex justify-between md:flex-col md:space-y-4 space-y-0 py-10">
@@ -48,7 +29,7 @@
 				<p>{{site.info.address}}</p>
 			</div>
 
-			{% for item in locations %} 
+			{% for item in locations %}
 				<div class="flex items-start flex-shrink-0 pr-3">
 					<div class="pb-1 border-b-2 border-white">{{item.title}}</div>
 					<div class="ml-4">
@@ -71,12 +52,15 @@
 				</div>
 			{% endfor %}
 		</div>
-		<div class="flex border-t border-white py-8 justify-end">
+		<div class="flex border-t border-white py-8 justify-between">
+			<div class="flex">
+				<a href="https://www.facebook.com/tienyih2012?locale=zh_TW" target="_blank">
+					<svg class="fill-current inline-block w-8 hover:opacity-75" viewbox="0 0 30 30">
+						<path d="M30 15.0913C30 6.75456 23.2863 0 15 0C6.71371 0 0 6.75456 0 15.0913C0 22.6235 5.48528 28.8669 12.6562 30V19.4538H8.84577V15.0913H12.6562V11.7663C12.6562 7.98438 14.8942 5.89533 18.3218 5.89533C19.9633 5.89533 21.6798 6.18986 21.6798 6.18986V9.90183H19.7879C17.925 9.90183 17.3437 11.0653 17.3437 12.2586V15.0913H21.5038L20.8385 19.4538H17.3437V30C24.5147 28.8669 30 22.6235 30 15.0913Z"/>
+					</svg>
+				</a>
+			</div>
 			<a href="/privacy-policy" class="underline text-sm">{{"隱私權政策"|t}}</a>
 		</div>
-
-		{# <div class="py-4 text-right">
-																	<a href="/privacy-policy" class=" ">Privacy Policy</a>
-																</div> #}
 	</div>
 </div>
