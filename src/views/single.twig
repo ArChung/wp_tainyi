@@ -2,7 +2,8 @@
 
 {% block necker %}
 	<div class="container wider">
-		<div class="neck-ratio bg-cover bg-center" style='background-image:url({{row.banner}})'></div>
+		{% set banner  = is_mobile and row.banner_m ? row.banner_m : row.banner %}
+		<div class="neck-ratio bg-cover bg-center" style='background-image:url({{banner}})'></div>
 	</div>
 {% endblock %}
 

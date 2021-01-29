@@ -45,6 +45,22 @@ if (post_password_required($post->ID)) {
         if ($post->recommends) {
             $context['recommends'] =  Post::inc($post->recommends)->get();
         }
+
+        // if (check_if_mobile()) {
+        //     $banners = $post->banner_m;
+        //     if (!$post->banner_m) {
+        //         $banners = $post->banner;
+        //     }
+        // } else {
+        //     $banners = $post->banner;
+        // }
+
+        // if ($banners) {
+        //     foreach ($banners as $key => $value) {
+        //         $context['page_banners'][] = new Timber\Image($key);
+        //     }
+        // }
+
         // $context['banner'] =  ['src' => $post->banner, 'alt' => $post->post_title];
     }
     Timber::render(['single-' . $post->ID . '.twig', 'single-' . $post_type . '.twig', 'single.twig'], $context);
