@@ -29,8 +29,6 @@ if (post_password_required($post->ID)) {
             $context['recommends'] =  Product::inc($post->recommends)->get();
         }
     } else {
-
-
         $terms =  $post->terms(array(
             'query' => [
                 'taxonomy' => 'category'
@@ -47,14 +45,7 @@ if (post_password_required($post->ID)) {
         if ($post->recommends) {
             $context['recommends'] =  Post::inc($post->recommends)->get();
         }
-
-
         // $context['banner'] =  ['src' => $post->banner, 'alt' => $post->post_title];
     }
-
-
-
-
-
     Timber::render(['single-' . $post->ID . '.twig', 'single-' . $post_type . '.twig', 'single.twig'], $context);
 }

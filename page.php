@@ -8,12 +8,22 @@ $post = new TimberPost();
 $context['post'] = $post;
 $context['titles'] = $post->title;
 $context['subtitle'] = $post->post_excerpt;
-if ($post->banner) {
-    foreach ($post->banner as $key => $value) {
 
+if (check_if_mobile()) {
+    $banners = $post->banner_m;
+    if (!$post->banner_m) {
+        $banners = $post->banner;
+    }
+} else {
+    $banners = $post->banner;
+}
+
+if ($banners) {
+    foreach ($banners as $key => $value) {
         $context['page_banners'][] = new Timber\Image($key);
     }
 }
+// md(check_if_mobile());
 
 
 // if ($post->post_parent > 0) {

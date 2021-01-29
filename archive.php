@@ -73,8 +73,18 @@ if (is_day()) {
         // $sidebar_args['uncategories'] = true;
         // $sidebar_args['child_of'] = 0;
         $sidebar_args['depth'] = 2;
-        if ($term->banner) {
-            foreach ($term->banner as $key => $value) {
+
+        if (check_if_mobile()) {
+            $banners = $term->banner_m;
+            if (!$term->banner_m) {
+                $banners = $term->banner;
+            }
+        } else {
+            $banners = $term->banner;
+        }
+
+        if ($banners) {
+            foreach ($banners as $key => $value) {
                 $context['products_banners'][] = new Timber\Image($key);
             }
         }

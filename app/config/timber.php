@@ -46,7 +46,7 @@ function add_to_context($context)
     // $context['main_sidebar'] =   Timber::get_widgets('main-sidebar');
 
 
-
+    $context['is_mobile'] = check_if_mobile();
 
 
     $context['locations'] =  \Domo\Models\Company::all();
@@ -66,3 +66,7 @@ function add_to_context($context)
 }
 
 add_filter('timber_context', 'add_to_context');
+function check_if_mobile()
+{
+    return is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), "mobile"));
+}
