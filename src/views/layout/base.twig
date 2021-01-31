@@ -8,6 +8,16 @@
 		{% include '@partial/head.twig' %}
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTPLHPS4SX"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-TTPLHPS4SX');
+		</script>
 	</head>
 	<body class="font-body w-full {% block body_cls %}{% endblock %} gee" style='padding-top:75px' data-gene="init:initAnimation">
 		

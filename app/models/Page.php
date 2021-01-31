@@ -33,7 +33,7 @@ class Page extends PostType
         ));
         $mb->add_field(array(
             'name' => 'Banner mobile',
-            'desc' => '建議尺寸: 640 px x 480 px',
+            'desc' => '建議尺寸: 460 px x 260 px',
             'id' => 'banner_m',
             'type' => 'file_list',
 

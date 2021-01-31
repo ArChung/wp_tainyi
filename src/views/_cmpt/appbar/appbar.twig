@@ -3,7 +3,7 @@
 		class="flex items-center justify-between w-full">
 		{# logo #}
 		<a href="{{uri}}" title="首頁" class="pb-3">
-			<img class="" src="{{ site.logo.normal }}" title="網站logo" alt="網站logo" style="max-width:101px">
+			<img class="" src="{{ site.logo.normal }}" title="網站logo" alt="網站logo">
 		</a>
 
 
@@ -17,8 +17,14 @@
 
 				<div class="flex h-full lg:py-16 lg:overflow-y-scroll">
 					<ul class="nav --normal flex lg:flex-col ">
+						<li class="item px-2">
+							<a class="h-full flex items-center" href="https://www.facebook.com/tienyih2012?locale=zh_TW" target="_blank">
+								<svg class="fill-current inline-block w-6 hover:opacity-75" viewbox="0 0 30 30" style="color:#285091;">
+									<path d="M30 15.0913C30 6.75456 23.2863 0 15 0C6.71371 0 0 6.75456 0 15.0913C0 22.6235 5.48528 28.8669 12.6562 30V19.4538H8.84577V15.0913H12.6562V11.7663C12.6562 7.98438 14.8942 5.89533 18.3218 5.89533C19.9633 5.89533 21.6798 6.18986 21.6798 6.18986V9.90183H19.7879C17.925 9.90183 17.3437 11.0653 17.3437 12.2586V15.0913H21.5038L20.8385 19.4538H17.3437V30C24.5147 28.8669 30 22.6235 30 15.0913Z"/>
+								</svg>
+							</a>
+						</li>
 						{% for item in header_menu %}
- 
 							{% if item.get_children %}
 								<li class="item hasChild lg:py-3">
 									<a class="link flex items-center cursor-pointer h-full px-4 lg:h-auto lg:pointer-events-none" target="{{item.target}}" href="{{ item.link}}">

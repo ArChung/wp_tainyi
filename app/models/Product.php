@@ -142,7 +142,7 @@ class Product extends PostType
         $cmb->add_field(array(
             'name' => 'Banner mobile',
             'id' => 'banner_m',
-            'desc' => '建議尺寸: 1440 x 337 px，安全範圍: 中間 580 x 320px',
+            'desc' => '建議尺寸: 460 x 260px',
             'type' => 'file_list',
             'preview_size' => array(300, 600), // Default: array( 50, 50 )
             'query_args' => array('type' => 'image'), // Only images attachment

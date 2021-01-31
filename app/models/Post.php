@@ -47,7 +47,7 @@ class Post extends PostType
         $mb->add_field(array(
             'name' => __('Banner mobile'),
             'id' => 'banner_m',
-            'desc'    => '建議尺寸:1440 x 540 px',
+            'desc'    => '建議尺寸:460 x 260 px',
             'type' => 'file',
 
         ));
